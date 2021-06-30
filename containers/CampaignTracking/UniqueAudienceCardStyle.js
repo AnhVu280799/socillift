@@ -1,0 +1,65 @@
+export default theme => ({
+  container: {
+    background: '#FFFFFF',
+    boxShadow: '20px 20px 20px rgba(122, 131, 163, 0.1)',
+    borderRadius: '4px',
+    width: '100%',
+    height: '260px',
+    [theme.breakpoints.down('321px')]: {
+      height: '290px',
+    },
+  },
+  titleStyle: {
+    ...theme.font.default,
+    fontWeight: 'bold',
+    fontSize: '18px',
+    lineHeight: '25px',
+    color: '#9DA4BA',
+    textAlign: 'left',
+    padding: '16px 0 0 32px',
+    [theme.breakpoints.down('sm')]: {
+      padding: '16px 0 0 16px',
+    },
+  },
+  valueStyle: {
+    ...theme.font.default,
+    fontSize: '48px',
+    fontWeight: 'bold',
+    lineHeight: '65px',
+    color: '#3C4859',
+    textAlign: 'left',
+    padding: '0 0 0 32px',
+    borderBottom: '1px solid #DCDFEA',
+  },
+  descriptionStyle: {
+    ...theme.font.default,
+    fontSize: '14px',
+    lineHeight: '19px',
+    color: '#9DA4BA',
+    textAlign: 'left',
+    padding: '8px 16px',
+  },
+  imageContainer: {
+    width: '100%',
+    height: 'auto',
+    padding: '16px 22px 0 0',
+  },
+  imageStyle: {
+    width: '35px',
+    height: '35px',
+    position: 'absolute',
+    left: '27%',
+    top: '22%',
+  },
+  tooltipTitle: {
+    ...theme.font.default,
+    textAlign: "center",
+    backgroundColor: theme.colors.baseGrey(),
+    boxShadow: "0px 1px 4px 0 rgba(0, 0, 0, 0.14)",
+    opacity: "0.95",
+    borderRadius: "3px",
+    fontSize: "14px",
+    color: theme.colors.white(),
+    margin: "0"
+  },
+});
